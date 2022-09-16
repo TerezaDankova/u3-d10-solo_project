@@ -109,7 +109,6 @@ background: radial-gradient(circle, rgba(232,170,18,1) 0%, rgba(255,254,254,0.84
   border-radius: 20px 20px 0 0;
   font-family: 'Recursive', sans-serif;
 }
-
 .header_text2 {
   color: whitesmoke;
   padding: 30px;
@@ -117,12 +116,14 @@ background: radial-gradient(circle, rgba(232,170,18,1) 0%, rgba(255,254,254,0.84
   font-family: 'Recursive', sans-serif;
   padding-left: 30px;
 }
+
 .input[type=text]{
     padding: 10px;
     border: 3px;
     box-shadow:0 0 15px 6px rgba(0, 0, 0, 0.06);
     border-radius:10px;
   }
+
 .rotate{
   transform: rotate(-20deg);
   margin-left: 800px;
@@ -132,4 +133,12 @@ background: radial-gradient(circle, rgba(232,170,18,1) 0%, rgba(255,254,254,0.84
   font-weight: bolder;
   color: whitesmoke;
   text-shadow: #424242;
+}
+.visible {
+  visibility: visible !important;
+}
+@media screen and (max-width: 800px) {
+  .visible {
+    visibility: hidden !important;
+  }
 }

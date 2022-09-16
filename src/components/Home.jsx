@@ -8,8 +8,8 @@ const Home = () => {
   return (
    <Container>
     <Row className="justify-content-md-center mt-5">
-          <div>
-                <h1 className='rotate'>Select City 
+          <div className="visible">
+                <h1 className='rotate '>Select City 
                  <ArrowRight/>
                 </h1>
           </div>
@@ -25,7 +25,7 @@ const Home = () => {
                   </p>
             </div>
             <div className="flex">
-                  <p className="rain_wind"><strong>Rain:</strong> 1.3 MM</p>
+                  <p className="rain_wind"><strong>Rain:</strong> 0 MM</p>
                   <p className="rain_wind"><strong>Wind:</strong> 10 MPH</p>
             </div>
       </div>
