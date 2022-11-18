@@ -18,7 +18,7 @@ class CitySelected extends Component {
             console.log(data)
             this.setState({
                 weather: data,
-                isLoading: false
+                isLoading: false,
             })
         }
         catch (error) {
@@ -41,15 +41,13 @@ class CitySelected extends Component {
                                 placeholder="Name of city..."
                                 value={this.state.searchQuery}
                                 onChange={e => this.setState({ searchQuery: e.target.value })}
-
                             />
-                        </Form.Group>
-                        
+                        </Form.Group>  
                     </Col>
                     <Col md={2} className="mt-4 pt-2">
                         <Button variant="light"
-                        onClick={this.fetchWeather}
-                        >SEARCH</Button>
+                        onClick={this.fetchWeather}>SEARCH
+                        </Button>
                     </Col>
                 </Row>
             </Col>
@@ -58,7 +56,6 @@ class CitySelected extends Component {
             </Col>
         </Row>
     </Container>
-    
     )
   }
 }

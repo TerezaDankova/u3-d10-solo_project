@@ -26,8 +26,7 @@ const MyNavbar = ({title}) => {
               <Nav className="ml-auto">
                 <Link
                   to="/citySelected"
-                  className={location.pathname === "/citySelected" ? "nav-link active" : "nav-link"}
-                >
+                  className={location.pathname === "/citySelected" ? "nav-link active" : "nav-link"}>
                   Select City
                 </Link>
                 <Button variant="link" onClick={goHome} className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
